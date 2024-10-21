@@ -1,0 +1,126 @@
+/* Base styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Header styles */
+  #my-to-do-list {
+    text-align: center;
+    color: #2c5282;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Navigation styles */
+  .mb-4 {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .mb-4 button {
+    background-color: #4299e1;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mb-4 button:hover {
+    background-color: #3182ce;
+  }
+  
+  /* Task section styles */
+  #dailyTasks, #weeklyTasks, #monthlyTasks {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  #daily-tasks, #weekly-report, #monthly-report {
+    color: #2c5282;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* Add task button styles */
+  .mt-4 button {
+    background-color: #48bb78;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mt-4 button:hover {
+    background-color: #38a169;
+  }
+  
+  /* Task list styles */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    background-color: #f7fafc;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  li:hover {
+    background-color: #edf2f7;
+  }
+  
+  /* Checkbox styles */
+  input[type="checkbox"] {
+    margin-right: 0.5rem;
+  }
+  
+  /* Completed task styles */
+  li.completed {
+    text-decoration: line-through;
+    color: #a0aec0;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 640px) {
+    .container {
+      padding: 1rem;
+    }
+  
+    #my-to-do-list {
+      font-size: 2rem;
+    }
+  
+    .mb-4 {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .mb-4 button {
+      margin-bottom: 0.5rem;
+    }
+  }
